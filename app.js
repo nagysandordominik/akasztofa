@@ -4,12 +4,12 @@ const revealWordElement = document.querySelector('.reveal-word');
 const resetElement = document.querySelector('.reset');
 const hangmanElement = document.querySelector('#hamgman-img');
 const wordsList = [
-    "alma", "kutya", "szeretet", "ablak", "kép", "virág",
-    "kert", "élet", "szív", "szék", "iskola", "ajtó", "út", "társadalom", "könyv", "televízió", "gyermek", "épület", "ember", "ország", "papír", "lámpa",
-    "folyó", "hegy", "villa", "lakás", "kávé", "óra", "utca", "vasút", "lány", "fiú", "gondolat", "folyamat", "híd", "számítógép", "mobiltelefon",
-    "család", "barát", "ház", "ruha", "tábla", "szótár", "fű", "magyar", "építészet", "játék", "kéz", "kormány", "város", "természet", "nap", "hold",
-    "csillag", "cukor", "hely", "kukac", "víz", "égbolt", "társ", "közösség", "gazdaság", "tudomány", "vízvezeték", "tűz", "szél", "hó", "föld", "idő", "szakma",
-    "szabadidő", "napfény", "világítás", "kommunikáció", "szerencse", "egészség", "mozgás", "képesség", "erő", "gyengeség", "kocka", "valóság", "álmok",
+    "alma", "kutya", "szeretet", "ablak", "piac", "virág",
+    "kert", "élet", "szív", "kábel", "iskola", "ajtó", "program", "társadalom", "könyv", "televízió", "gyermek", "épület", "ember", "ország", "papír", "lámpa",
+    "folyó", "hegy", "villa", "lakás", "adatbázis", "zsákmány", "utca", "vasút", "lány", "kémény", "gondolat", "folyamat", "híd", "számítógép", "mobiltelefon",
+    "család", "barát", "állomány", "ruha", "tábla", "szótár", "drog", "magyar", "építészet", "játék", "káposzta", "kormány", "város", "természet", "nap", "hold",
+    "csillag", "cukor", "hely", "kukac", "fikusz", "égbolt", "házasság", "közösség", "gazdaság", "tudomány", "vízvezeték", "bojler", "szél", "tükör", "föld", "temető", "szakma",
+    "szabadidő", "napfény", "világítás", "kommunikáció", "szerencse", "egészség", "mozgás", "képesség", "monitor", "gyengeség", "kocka", "valóság", "álmok",
     "győzelem", "harc", "békesség", "szabadság", "remény", "siker", "boldogság", "szomorúság", "félelem", "szerelem", "boldogtalanság", "vágy", "öröm"
 ];
 
