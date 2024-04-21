@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+
+*,
+::after,
+::before {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #C7D2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*     height: 100vh; */
+    /*     margin: 0; */
+}
+
+.ctn {
+    position: relative;
+    margin-top: 8rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    text-align: initial;
+    font-weight: 800;
+    color: #DBBC5F;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.display-word {
+    text-align: initial;
+    font-size: 2rem;
+    margin: 2.5rem 0 3.5rem 0;
+}
+
+.attempts-remaining {
+    text-align: initial;
+    margin-bottom: 2.5rem;
+    font-size: 1.6rem;
+}
+
+#hangman-img {
+    width: 102px;
+    height: 180px;
+    position: absolute;
+    top: -4px;
+    left: 254px;
+    color: black;
+}
+
+.alphabet-ctn {
+    border-radius: 6px;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1rem;
+    place-content: center;
+    margin-bottom: 2rem;
+}
+
+.letter {
+    background-color: #DBBC5F;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    transition: background-color 0.3s;
+}
+
+.letter:hover {
+    background-color: #C7D2F2;
+}
+
+.letter.btn-clicked {
+    color: #000;
+    position: relative;
+}
+
+.letter.btn-clicked::before {
+    content: "x";
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    left: 2px;
+    bottom: -8px;
+    font-size: 50px;
+    color: white;
+    opacity: .8;
+}
+
+.reveal-word {
+    font-size: 2rem;
+    display: none;
+    margin-bottom: 2rem;
+}
+
+.active {
+    display: block;
+}
+
+.reset {
+    background-color: white;
+    color: #DBBC5F;
+    border: 2px solid #DBBC5F;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.reset:hover {
+    background-color: #DBBC5F;
+    color: white;
+}
