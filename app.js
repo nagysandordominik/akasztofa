@@ -85,7 +85,7 @@ function checkLetterInWord(randomWord, wordArray, lowerCaseLetter) {
     wordElement.textContent = wordArray.join(' ');
 
     if (wordElement.textContent.replace(/\s/g, '') === randomWord) {
-        revealWordElement.innerHTML = `You WON!!`
+        revealWordElement.innerHTML = `NYERTÉL`
         revealWordElement.classList.add('active');
         stopAlphabetEvent();
     };
