@@ -101,7 +101,7 @@ function stopAlphabetEvent() {
 
 function updateHangmanImage(chances) {
     const hangmanImg = document.querySelector('#hangman-img');
-    hangmanImg.src = `https://raw.githubusercontent.com/ruthinunes/hangman/main/images/${6 - chances}.png`;
+    hangmanImg.src = `img/${6 - chances}.png`;
 };
 
 function endOfGame(randomWord, chances) {
