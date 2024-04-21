@@ -4,12 +4,13 @@ const revealWordElement = document.querySelector('.reveal-word');
 const resetElement = document.querySelector('.reset');
 const hangmanElement = document.querySelector('#hamgman-img');
 const wordsList = [
-    'apple', 'airplane', 'ballerina', 'banana', 'library', 'bicycle', 'butterfly', 'chair',
-    'chocolate', 'computer', 'dolphin', 'elephant', 'festival', 'flower', 'giraffe', 'guitar',
-    'hamster', 'headphones', 'island', 'jacket', 'kangaroo', 'kite', 'laptop', 'lemon',
-    'mountain', 'notebook', 'octopus', 'pencil', 'pineapple', 'pumpkin', 'quilt', 'rabbit',
-    'rainbow', 'refrigerator', 'scissors', 'shampoo', 'squirrel', 'strawberry', 'television',
-    'tomato', 'umbrella', 'vacuum', 'violin', 'watermelon', 'xylophone', 'yacht', 'zebra'
+    "alma", "fa", "kutya", "szeretet", "ablak", "kép", "virág",
+    "kert", "élet", "szív", "szék", "iskola", "ajtó", "út", "társadalom", "könyv", "televízió", "gyermek", "épület", "ember", "ország", "papír", "lámpa",
+    "folyó", "hegy", "villa", "lakás", "kávé", "óra", "utca", "vasút", "lány", "fiú", "gondolat", "folyamat", "híd", "számítógép", "mobiltelefon",
+    "család", "barát", "ház", "ruha", "tábla", "szótár", "fű", "magyar", "építészet", "játék", "kéz", "kormány", "város", "természet", "nap", "hold",
+    "csillag", "cukor", "hely", "kukac", "víz", "égbolt", "társ", "közösség", "gazdaság", "tudomány", "vízvezeték", "tűz", "szél", "hó", "föld", "idő", "szakma",
+    "szabadidő", "napfény", "világítás", "kommunikáció", "szerencse", "egészség", "mozgás", "képesség", "erő", "gyengeség", "kocka", "valóság", "álmok",
+    "győzelem", "harc", "békesség", "szabadság", "remény", "siker", "boldogság", "szomorúság", "félelem", "szerelem", "boldogtalanság", "vágy", "öröm"
 ];
 
 
@@ -17,7 +18,7 @@ let choosedWord = '';
 let chances = 6;
 
 function createAlphabetButtons() {
-    const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const alphabet = "AÁBCDDZEÉFGHIÍJKLMNOÓÖŐPQRSTUÚÜŰVWXYZ";
     const lettersContainer = document.querySelector('.alphabet-ctn');
 
     for (const letter of alphabet) {
