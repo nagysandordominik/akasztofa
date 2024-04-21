@@ -4,7 +4,7 @@ const revealWordElement = document.querySelector('.reveal-word');
 const resetElement = document.querySelector('.reset');
 const hangmanElement = document.querySelector('#hamgman-img');
 const wordsList = [
-    "alma", "fa", "kutya", "szeretet", "ablak", "kép", "virág",
+    "alma", "kutya", "szeretet", "ablak", "kép", "virág",
     "kert", "élet", "szív", "szék", "iskola", "ajtó", "út", "társadalom", "könyv", "televízió", "gyermek", "épület", "ember", "ország", "papír", "lámpa",
     "folyó", "hegy", "villa", "lakás", "kávé", "óra", "utca", "vasút", "lány", "fiú", "gondolat", "folyamat", "híd", "számítógép", "mobiltelefon",
     "család", "barát", "ház", "ruha", "tábla", "szótár", "fű", "magyar", "építészet", "játék", "kéz", "kormány", "város", "természet", "nap", "hold",
@@ -107,7 +107,7 @@ function updateHangmanImage(chances) {
 function endOfGame(randomWord, chances) {
 
     if (chances == 0) {
-        revealWordElement.innerHTML = `You LOSE! The word was: ${randomWord}`
+        revealWordElement.innerHTML = `VESZTETTÉL! A helyes szó: ${randomWord}`
         revealWordElement.classList.add('active');
         stopAlphabetEvent();
     };
