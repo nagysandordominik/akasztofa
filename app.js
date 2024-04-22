@@ -18,7 +18,7 @@ let choosedWord = '';
 let chances = 6;
 
 function createAlphabetButtons() {
-    const alphabet = "AÁBCDDZEÉFGHIÍJKLMNOÓÖŐPQRSTUÚÜŰVWXYZ";
+    const alphabet = "AÁBCDZEÉFGHIÍJKLMNOÓÖŐPQRSTUÚÜŰVWXYZ";
     const lettersContainer = document.querySelector('.alphabet-ctn');
 
     for (const letter of alphabet) {
