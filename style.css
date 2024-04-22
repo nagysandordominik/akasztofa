@@ -38,20 +38,19 @@ body {
 h1 {
     text-align: initial;
     color: #DBBC5F;
-    margin-bottom: 1rem;
     font-size: 4rem;
 }
 
 .display-word {
     text-align: initial;
-    font-size: 3rem;
-    margin: 2.5rem 0 3.5rem 0;
+    font-size: 50px;
+    margin: 1.5rem 0 2.5rem 0;
 }
 
 .attempts-remaining {
     text-align: initial;
-    margin-bottom: 2.5rem;
-    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-size: 50px;
 }
 
 #hangman-img {
@@ -99,11 +98,11 @@ h1 {
 }
 
 .letter.btn-clicked::before {
-    content: "x";
+    content: "X";
     position: absolute;
     font-size: 60px;
-
-    bottom: -7px;
+    bottom: -15px;
+    left: 10px;
     color: red;
     opacity: .8;
 }
@@ -111,7 +110,6 @@ h1 {
 .reveal-word {
     font-size: 50px;
     display: none;
-    margin-bottom: 2rem;
 }
 
 .active {
