@@ -55,11 +55,11 @@ h1 {
 }
 
 #hangman-img {
-    width: 102px;
-    height: 180px;
+    width: 120px;
+    height: 200px;
     position: absolute;
     top: -4px;
-    left: 254px;
+    left: 224px;
     color: black;
 }
 
