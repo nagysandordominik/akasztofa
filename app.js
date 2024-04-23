@@ -129,6 +129,14 @@ function resetGame() {
     displayWord();
 };
 
+const menuElement = document.querySelector('.menu');
+
+function visszaMenube() {
+    window.location.href = 'menu.html';
+}
+
+menuElement.addEventListener('click', visszaMenube);
+
 window.addEventListener('DOMContentLoaded', function () {
     createAlphabetButtons();
     displayWord();

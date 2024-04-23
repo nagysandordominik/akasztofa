@@ -57,7 +57,7 @@ h1 {
     width: 160px;
     position: absolute;
     top: -4px;
-    left: 524px;
+    left: 675px;
     color: black;
 }
 
@@ -101,10 +101,10 @@ h1 {
     content: "X";
     position: absolute;
     font-size: 60px;
-    bottom: -15px;
-    left: 10px;
-    color: red;
-    opacity: .8;
+    bottom: -12px;
+    left: 0px;
+    color: rgb(214, 60, 60);
+    opacity: .85;
 }
 
 .reveal-word {
@@ -116,7 +116,7 @@ h1 {
     display: block;
 }
 
-.reset {
+.reset, .menu {
     font-family: "Shadows Into Light", cursive;
     background-color: white;
     color: #DBBC5F;
@@ -127,8 +127,11 @@ h1 {
     font-size: 50px;
     transition: background-color 0.3s, color 0.3s;
 }
+.menu {
+    margin-left: 1rem;
+}
 
-.reset:hover {
+.reset:hover, .menu:hover {
     background-color: #DBBC5F;
     color: white;
 }
