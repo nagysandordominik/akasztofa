@@ -7,7 +7,7 @@
 
 body
 {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(hatter.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/hatter.jpg);
     background-repeat: none;
 	background-size: cover;
 	background-position: center 0px;
@@ -69,19 +69,19 @@ body
 
 #tenger
 {
-    background-image: url(tenger.jpg);
+    background-image: url(img/tenger.jpg);
 }
 
 #ur
 {
     
-    background-image: url(ur.jpg);
+    background-image: url(img/ur.jpg);
 }
 
 #orszag
 {
     
-    background-image: url(orszag.jpg);
+    background-image: url(img/orszag.jpg);
 }
 
 h1
