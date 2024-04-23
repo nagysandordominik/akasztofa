@@ -23,8 +23,9 @@ body
 #cim
 {
     margin: 20px;
+    margin-bottom: 50px;
     top: 0;
-    color: white;
+    color: goldenrod;
     font-size: 60px;
     font-family: arial;
     position: fixed;
