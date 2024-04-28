@@ -132,7 +132,7 @@ function resetGame() {
 const menuElement = document.querySelector('.menu');
 
 function visszaMenube() {
-    window.location.href = 'menu.html';
+    window.location.href = 'index.html';
 }
 
 menuElement.addEventListener('click', visszaMenube);

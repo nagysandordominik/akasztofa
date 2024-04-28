@@ -25,13 +25,14 @@ body {
 }
 
 .ctn {
-    width: 60%;
     position: relative;
-    margin: 50px;
+    margin: 6rem auto;
+    min-width: 700px;
+    width: 60%;
     background-color: white;
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -43,27 +44,57 @@ h1 {
 
 .display-word {
     text-align: initial;
-    font-size: 50px;
+    font-size: 40px;
     margin: 1.5rem 0 2.5rem 0;
 }
 
 .attempts-remaining {
-    text-align: initial;
-    margin-bottom: 1rem;
-    font-size: 50px;
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 32px;
 }
 
 #hangman-img {
     width: 160px;
     position: absolute;
     top: -4px;
-    left: 675px;
+    left: 510px;
     color: black;
+}
+
+@media (max-width: 1080px) {
+    #hangman-img {
+        max-width: 160px;
+        position: absolute;
+        top: -4px;
+        left: 500px;
+        transform: translateX(-50%);
+    }
+    .ctn {
+        position: relative;
+        min-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    #hangman-img {
+        max-width: 160px;
+        position: absolute;
+        top: -4px;
+        left: 420px;
+        transform: translateX(-50%);
+    }
+    .ctn {
+        position: relative;
+        min-width: 90%;
+    }
+
 }
 
 .alphabet-ctn {
     border-radius: 6px;
-    width: 100%;
+    max-width: 85%;
+    margin: 0 auto;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: grid;
@@ -74,7 +105,7 @@ h1 {
     place-content: center;
     margin-bottom: 2rem;
 }
-
+/*
 .letter {
     font-family: "Shadows Into Light", cursive;
     background-color: #DBBC5F;
@@ -83,8 +114,20 @@ h1 {
     width: 45px;
     margin: 1px;
     cursor: pointer;
-    border-radius: 5px;
-    font-size: 40px;
+    border-radius: 10px;
+    font-size: 35px;
+    transition: background-color 0.3s;
+}
+*/
+.letter {
+    font-family: "Shadows Into Light", cursive;
+    background-color: #DBBC5F;
+    color: white;
+    border: none;
+    width: 38px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 3rem;
     transition: background-color 0.3s;
 }
 
@@ -123,8 +166,9 @@ h1 {
     border: 2px solid #DBBC5F;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    border-radius: 5px;
-    font-size: 50px;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-bottom: 10px;
     transition: background-color 0.3s, color 0.3s;
 }
 .menu {
