@@ -3,6 +3,7 @@ const attemptElement = document.querySelector('#attempts-remaining');
 const revealWordElement = document.querySelector('.reveal-word');
 const resetElement = document.querySelector('.reset');
 const hangmanElement = document.querySelector('#hamgman-img');
+const temaSelector = document.querySelector('tema');
 const wordsList = [
     "alma", "kutya", "szeretet", "ablak", "piac", "virág",
     "kert", "élet", "szív", "kábel", "iskola", "ajtó", "program", "társadalom", "könyv", "televízió", "gyermek", "épület", "ember", "ország", "papír", "lámpa",
@@ -12,10 +13,179 @@ const wordsList = [
     "szabadidő", "napfény", "világítás", "kommunikáció", "szerencse", "egészség", "mozgás", "képesség", "monitor", "gyengeség", "kocka", "valóság", "álmok",
     "győzelem", "harc", "békesség", "szabadság", "remény", "siker", "boldogság", "szomorúság", "félelem", "szerelem", "boldogtalanság", "vágy", "öröm"
 ];
+const tengerSzavak = [
+    "hullám",
+    "part",
+    "hajó",
+    "vitorla",
+    "hal",
+    "búvár",
+    "bóják",
+    "barna alga",
+    "szikla",
+    "homok",
+    "dagály",
+    "apály",
+    "koral",
+    "hajóroncs",
+    "szörf",
+    "gömbhal",
+    "strand",
+    "felfedezés",
+    "búvárruházat",
+    "tengeralattjáró",
+    "víztükör",
+    "óceán",
+    "halászhajó",
+    "tengerfenék",
+    "búvárkodás",
+    "tengerpart",
+    "sótartalom",
+    "tengerészet",
+    "lávakövek",
+    "lávafolyam",
+    "szörfdeszka",
+    "horgászat",
+    "sósvíz",
+    "szörfözés",
+    "korallzátony",
+    "hullámtörés"
+];
 
+const vilagurSzavak = [
+    "csillag",
+    "bolygó",
+    "űrhajó",
+    "űrállomás",
+    "Szaturnusz",
+    "űrkutatás",
+    "űrközpont",
+    "űrturizmus",
+    "űrtávcső",
+    "űrkutató",
+    "űrkapszula",
+    "űrkolonizáció",
+    "űrlabor",
+    "űrszemét",
+    "űrsétány",
+    "űrszonda",
+    "űrfelszín",
+    "űrjárás",
+    "űrfelvétel",
+    "rakéta",
+    "űrszonda",
+    "lökésfront",
+    "légkör",
+    "űrbázis",
+    "világegyetem",
+    "Mars",
+    "Tejút",
+    "gravitáció",
+    "űrtechnológia",
+    "vákuum",
+    "űrutazás",
+    "atmoszféra",
+    "háttérsugárzás",
+    "légellenállás",
+    "űrlift",
+    "űrhálózat",
+    "űrkutató",
+    "termoszféra",
+    "asztronauta",
+    "űrkaland",
+    "műhold",
+    "űrkutatás",
+    "űrlégkör",
+    "űrfelszerelés",
+    "űrszonda",
+    "üstökös",
+    "űrközpont",
+    "hellopauza",
+    "univerzum"
+];
+
+const orszagSzavak = [
+    "Ausztrália",
+    "Brazília",
+    "Egyiptom",
+    "Franciaország",
+    "India",
+    "Japán",
+    "Kanada",
+    "Mexikó",
+    "Németország",
+    "Olaszország",
+    "Spanyolország",
+    "Svédország",
+    "Törökország",
+    "Argentína",
+    "Belgium",
+    "Chile",
+    "Dánia",
+    "Görögország",
+    "Hollandia",
+    "Norvégia",
+    "Portugália",
+    "Svájc",
+    "Ukrajna",
+    "Ausztria",
+    "Bulgária",
+    "Csehország",
+    "Finnország",
+    "Írország",
+    "Kolumbia",
+    "Lengyelország",
+    "Románia",
+    "Szerbia",
+    "Thaiföld",
+    "Vietnám",
+    "Afganisztán",
+    "Bahrein",
+    "Kuvait",
+    "Mongólia",
+    "Pakisztán",
+    "Szíria",
+    "Katar",
+    "Irak",
+    "Jemen",
+    "Omán",
+    "Libanon",
+    "UAE",
+    "Etiópia",
+    "Kenya",
+    "Nigéria",
+    "Szenegál",
+    "Ecuador",
+    "Peru",
+    "Uruguay",
+    "Panama",
+    "Venezuela",
+    "Fülöp-szigetek",
+    "Indonézia",
+    "Malajzia",
+    "Szingapúr",
+    "Tajvan",
+    "Banglades",
+    "Maldív-szigetek",
+    "Nepál",
+    "Szudán",
+    "Zambia"
+];
+
+let selectedArray=[];
+
+temaSelector.addEventListener("click", function() {
+    if (document.getElementById("tenger")) {
+        selectedArray = tengerSzavak;
+    } else if (document.getElementById("vilagur")) {
+        selectedArray = vilagurSzavak;
+    } else {
+        selectedArray = orszagSzavak;
+    }
+})
 
 let choosedWord = '';
-let chances = 6;
+let chances = choosedWord.length;
 
 function createAlphabetButtons() {
     const alphabet = "AÁBCDZEÉFGHIÍJKLMNOÓÖŐPQRSTUÚÜŰVWXYZ";
@@ -38,8 +208,8 @@ function createLetterStyle(lettersContainer, letter) {
 };
 
 function getRandomWord() {
-    const randomIndex = Math.floor(Math.random() * wordsList.length);
-    return wordsList[randomIndex];
+    const randomIndex = Math.floor(Math.random() * selectedArray.length);
+    return selectedArray[randomIndex];
 };
 
 function displayWord() {
