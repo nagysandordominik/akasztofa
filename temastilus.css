@@ -8,7 +8,7 @@
 body
 {
     background-color: #C7D2F2;
-    background-repeat: none;
+    background-repeat:no-repeat;
 	background-size: cover;
 	background-position: center 0px;
 	background-attachment: fixed;
