@@ -2,17 +2,9 @@
 <html>
 <head>
     <title>Akasztófa</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <style>
-        ul {
-            list-style-type: none;
-            margin-bottom: 45px;
-            padding: 0;
-            text-align: center;
-        }
-
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
         .button {
             display: block;
             margin: 0 auto;
@@ -21,18 +13,12 @@
             border-radius: 15px;
             padding: 8px;
             background-color: #DBBC5F;
-        }
-
-        li {
-            margin-top: 10px;
-        }
-
-        a {
             text-decoration: none;
             color: #282345;
-            font-family: "Caveat", cursive;
+            font-family: 'Inconsolata', monospace;
             font-size: larger;
             font-weight: bold;
+            cursor: pointer;
         }
 
         .button:hover {
@@ -47,7 +33,7 @@
         }
 
         body {
-            font-family: "Caveat", cursive;
+            font-family: 'Nunito', sans-serif;
             background-color: #C7D2F2;
         }
 
@@ -65,17 +51,15 @@
 </head>
 <body>
     <div class="ctn">
-    <h1>Akasztófa</h1>
-    <ul>
-        <li><a href="jatek.html" class="button">Gyors játék</a></li>
-        <li><a href="temak.html" class="button">Témák</a></li>
-        <li><a href="records.html" class="button">Rekordok</a></li>
-        <li><a href="information.html" class="button">Információ</a></li>
-    </ul>
-    </div>
-    
+    <h1>Rekordok</h1>
+
+    <button class="button">Vissza a menühöz</button>
     <script>
-        
+        document.querySelector('.button').addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
     </script>
+
+    </div>
 </body>
 </html>
