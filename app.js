@@ -7,7 +7,7 @@ const temaSelector = document.querySelector('tema');
 // const wordsList = ["alma", "kutya", "szeretet", "ablak", "piac", "virág", "kert", "élet", "szív", "kábel", "iskola", "ajtó", "program", "társadalom", "könyv", "televízió", "gyermek", "épület", "ember", "ország", "papír", "lámpa", "folyó", "hegy", "villa", "lakás", "adatbázis", "zsákmány", "utca", "vasút", "lány", "kémény", "gondolat", "folyamat", "híd", "számítógép", "mobiltelefon", "család", "barát", "állomány", "ruha", "tábla", "szótár", "drog", "magyar", "építészet", "játék", "káposzta", "kormány", "város", "természet", "nap", "hold", "csillag", "cukor", "hely", "kukac", "fikusz", "égbolt", "házasság", "közösség", "gazdaság", "tudomány", "vízvezeték", "bojler", "szél", "tükör", "föld", "temető", "szakma", "szabadidő", "napfény", "világítás", "kommunikáció", "szerencse", "egészség", "mozgás", "képesség", "monitor", "gyengeség", "kocka", "valóság", "álmok", "győzelem", "harc", "békesség", "szabadság", "remény", "siker", "boldogság", "szomorúság", "félelem", "szerelem", "boldogtalanság", "vágy", "öröm"];
 const tengerSzavak = ["hullám", "part", "hajó", "vitorla", "hal", "búvár", "bóják", "barna alga", "szikla", "homok", "dagály", "apály", "koral", "hajóroncs", "szörf", "gömbhal", "strand", "felfedezés", "búvárruházat", "tengeralattjáró", "víztükör", "óceán", "halászhajó", "tengerfenék", "búvárkodás", "tengerpart", "sótartalom", "tengerészet", "lávakövek", "lávafolyam", "szörfdeszka", "horgászat", "sósvíz", "szörfözés", "korallzátony", "hullámtörés"];
 const vilagurSzavak = ["csillag", "bolygó", "űrhajó", "űrállomás", "Szaturnusz", "űrkutatás", "űrközpont", "űrturizmus", "űrtávcső", "űrkutató", "űrkapszula", "űrkolonizáció", "űrlabor", "űrszemét", "űrsétány", "űrszonda", "űrfelszín", "űrjárás", "űrfelvétel", "rakéta", "űrszonda", "lökésfront", "légkör", "űrbázis", "világegyetem", "Mars", "Tejút", "gravitáció", "űrtechnológia", "vákuum", "űrutazás", "atmoszféra", "háttérsugárzás", "légellenállás", "űrlift", "űrhálózat", "űrkutató", "termoszféra", "asztronauta", "űrkaland", "műhold", "űrkutatás", "űrlégkör", "űrfelszerelés", "űrszonda", "üstökös", "űrközpont", "hellopauza", "univerzum"];
-const orszagSzavak = ["Ausztrália", "Brazília", "Egyiptom", "Franciaország", "India", "Japán", "Kanada", "Mexikó", "Németország", "Olaszország", "Spanyolország", "Svédország", "Törökország", "Argentína", "Belgium", "Chile", "Dánia", "Görögország", "Hollandia", "Norvégia", "Portugália", "Svájc", "Ukrajna", "Ausztria", "Bulgária", "Csehország", "Finnország", "Írország", "Kolumbia", "Lengyelország", "Románia", "Szerbia", "Thaiföld", "Vietnám", "Afganisztán", "Bahrein", "Kuvait", "Mongólia", "Pakisztán", "Szíria", "Katar", "Irak", "Jemen", "Omán", "Libanon", "UAE", "Etiópia", "Kenya", "Nigéria", "Szenegál", "Ecuador", "Peru", "Uruguay", "Panama", "Venezuela", "Fülöp-szigetek", "Indonézia", "Malajzia", "Szingapúr", "Tajvan", "Banglades", "Maldív-szigetek", "Nepál", "Szudán", "Zambia"];
+const orszagSzavak = ["ausztrália", "brazília", "egyiptom", "franciaország", "india", "japán", "kanada", "mexikó", "németország", "olaszország", "spanyolország", "svédország", "törökország", "argentína", "belgium", "chile", "dánia", "görögország", "hollandia", "norvégia", "portugália", "svájc", "ukrajna", "ausztria", "bulgária", "csehország", "finnország", "írország", "kolumbia", "lengyelország", "románia", "szerbia", "thaiföld", "vietnám", "afganisztán", "bahrein", "kuvait", "mongólia", "pakisztán", "szíria", "katar", "irak", "jemen", "omán", "libanon", "uae", "etiópia", "kenya", "nigéria", "szenegál", "ecuador", "peru", "uruguay", "panama", "venezuela", "fülöp-szigetek", "indonézia", "malajzia", "szingapúr", "tajvan", "banglades", "maldív-szigetek", "nepál", "szudán", "zambia"];
 let selectedArray = [];
 
 let choosedWord = '';
@@ -66,13 +66,13 @@ function displayWord() {
 }
 
 function guessLetter(letter, button) {
-    const randomWord = choosedWord;
-    const lowerCaseLetter = letter.toLocaleLowerCase();
+    const randomWord = choosedWord.toUpperCase();
+    const upperCaseLetter = letter.toUpperCase();
     const formattedWord = wordElement.textContent;
 
-    if (randomWord.includes(lowerCaseLetter)) {
+    if (randomWord.includes(upperCaseLetter)) {
         const wordArray = formattedWord.split(' ');
-        checkLetterInWord(randomWord, wordArray, lowerCaseLetter);
+        checkLetterInWord(randomWord, wordArray, upperCaseLetter);
     } else {
         chances -= 1;
         attemptElement.innerHTML = chances;
@@ -85,10 +85,10 @@ function guessLetter(letter, button) {
     button.classList.add('btn-clicked');
 }
 
-function checkLetterInWord(randomWord, wordArray, lowerCaseLetter) {
+function checkLetterInWord(randomWord, wordArray, upperCaseLetter) {
     for (let i = 0; i < randomWord.length; i++) {
-        if (randomWord[i] === lowerCaseLetter) {
-            wordArray[i] = lowerCaseLetter;
+        if (randomWord[i] === upperCaseLetter) {
+            wordArray[i] = upperCaseLetter;
         }
 
     }

@@ -143,8 +143,8 @@ h1 {
     content: "X";
     position: absolute;
     font-size: 60px;
-    bottom: -12px;
-    left: 0px;
+    bottom: -20px;
+    left: 5px;
     color: rgb(214, 60, 60);
     opacity: .85;
 }
