@@ -14,7 +14,7 @@ let choosedWord = '';
 let chances = 6;
 
 function createAlphabetButtons() {
-    const alphabet = "AÁBCDZEÉFGHIÍJKLMNOÓÖŐPQRSTUÚÜŰVWXYZ";
+    const alphabet = "AÁBCDEÉFGHIÍJKLMNOÓÖŐPQRSTUÚÜŰVWXYZ";
     const lettersContainer = document.querySelector('.alphabet-ctn');
 
     for (const letter of alphabet) {
@@ -41,6 +41,8 @@ function checkTema() {
         selectedArray = vilagurSzavak;
     } else if (window.location.href.includes('jatek3.html')) {
         selectedArray = orszagSzavak;
+    } else if (window.location.href.includes('jatek.html')) {
+        selectedArray = tengerSzavak, vilagurSzavak, orszagSzavak;
     }
 }
 checkTema();
