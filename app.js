@@ -8,6 +8,7 @@ const temaSelector = document.querySelector('tema');
 const tengerSzavak = ["hullám", "part", "hajó", "vitorla", "hal", "búvár", "bóják", "barna alga", "szikla", "homok", "dagály", "apály", "koral", "hajóroncs", "szörf", "gömbhal", "strand", "felfedezés", "búvárruházat", "tengeralattjáró", "víztükör", "óceán", "halászhajó", "tengerfenék", "búvárkodás", "tengerpart", "sótartalom", "tengerészet", "lávakövek", "lávafolyam", "szörfdeszka", "horgászat", "sósvíz", "szörfözés", "korallzátony", "hullámtörés"];
 const vilagurSzavak = ["csillag", "bolygó", "űrhajó", "űrállomás", "Szaturnusz", "űrkutatás", "űrközpont", "űrturizmus", "űrtávcső", "űrkutató", "űrkapszula", "űrkolonizáció", "űrlabor", "űrszemét", "űrsétány", "űrszonda", "űrfelszín", "űrjárás", "űrfelvétel", "rakéta", "űrszonda", "lökésfront", "légkör", "űrbázis", "világegyetem", "Mars", "Tejút", "gravitáció", "űrtechnológia", "vákuum", "űrutazás", "atmoszféra", "háttérsugárzás", "légellenállás", "űrlift", "űrhálózat", "űrkutató", "termoszféra", "asztronauta", "űrkaland", "műhold", "űrkutatás", "űrlégkör", "űrfelszerelés", "űrszonda", "üstökös", "űrközpont", "hellopauza", "univerzum"];
 const orszagSzavak = ["ausztrália", "brazília", "egyiptom", "franciaország", "india", "japán", "kanada", "mexikó", "németország", "olaszország", "spanyolország", "svédország", "törökország", "argentína", "belgium", "chile", "dánia", "görögország", "hollandia", "norvégia", "portugália", "svájc", "ukrajna", "ausztria", "bulgária", "csehország", "finnország", "írország", "kolumbia", "lengyelország", "románia", "szerbia", "thaiföld", "vietnám", "afganisztán", "bahrein", "kuvait", "mongólia", "pakisztán", "szíria", "katar", "irak", "jemen", "omán", "libanon", "uae", "etiópia", "kenya", "nigéria", "szenegál", "ecuador", "peru", "uruguay", "panama", "venezuela", "fülöp-szigetek", "indonézia", "malajzia", "szingapúr", "tajvan", "banglades", "maldív-szigetek", "nepál", "szudán", "zambia"];
+const osszesSzavak = tengerSzavak.concat(vilagurSzavak, orszagSzavak);
 let selectedArray = [];
 
 let choosedWord = '';
@@ -42,7 +43,7 @@ function checkTema() {
     } else if (window.location.href.includes('jatek3.html')) {
         selectedArray = orszagSzavak;
     } else if (window.location.href.includes('jatek.html')) {
-        selectedArray = tengerSzavak, vilagurSzavak, orszagSzavak;
+        selectedArray = osszesSzavak;
     }
 }
 checkTema();
