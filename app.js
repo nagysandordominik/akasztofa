@@ -169,3 +169,4 @@ function closeInfoPopup() {
     var modal = document.getElementById("infoModal");
     modal.style.display = "none";
 }
+
