@@ -15,8 +15,18 @@
         <li><a href="jatek.html" class="button">Gyors játék</a></li>
         <li><a href="temak.html" class="button">Témák</a></li>
         <li><a href="records.html" class="button">Rekordok</a></li>
-        <li><a href="information.html" class="button">Információ</a></li>
+        <li><a class="button" onclick="openInfoPopup()">Információ</a></li>
     </ul>
     </div>
+
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeInfoPopup()">&times;</span>
+            <h2>Információ</h2>
+            <p>Ezt a játékot Kreiniker Ákos, Nagy Sándor Dominik és Nagy Szabolcs Benjámin készitette.</p>
+            <p>Jó szórakozást!</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>

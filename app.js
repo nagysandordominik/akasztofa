@@ -160,3 +160,12 @@ window.addEventListener('DOMContentLoaded', function () {
 
 resetElement.addEventListener('click', resetGame);
 
+function openInfoPopup() {
+    var modal = document.getElementById("infoModal");
+    modal.style.display = "block";
+}
+
+function closeInfoPopup() {
+    var modal = document.getElementById("infoModal");
+    modal.style.display = "none";
+}
