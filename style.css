@@ -236,7 +236,7 @@ h1 {
 .tema:hover {
     transform: scale(1.05);
 }
-.tema h1, a {
+.tema h1, .tema a {
     font-size: 3.3vw;
     font-family: 'Inconsolata';
     color: white;
@@ -253,6 +253,7 @@ h1 {
     border-radius: 10px;
     box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    top: 55px;
 }
 #tenger
 {
