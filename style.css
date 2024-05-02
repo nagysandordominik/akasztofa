@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@371&family=Jersey+15&display=swap');
+
 *,
 ::after,
 ::before {
@@ -9,16 +11,14 @@
 }
 
 html {
-    font-size: 70%;
-    font-family: "Caveat", cursive;
+    font-size: 68%;
+    font-family: "Jersey 15";
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*     height: 100vh; */
-    /*     margin: 0; */
 }
 
 .ctn {
@@ -52,18 +52,17 @@ h1 {
 }
 
 #hangman-img {
-    width: 160px;
+    width: 150px;
     position: absolute;
-    top: -4px;
+    top: -22px;
     left: 510px;
     color: black;
 }
 
 @media (max-width: 1080px) {
     #hangman-img {
-        max-width: 160px;
+        max-width: 150px;
         position: absolute;
-        top: -4px;
         left: 500px;
         transform: translateX(-50%);
     }
@@ -75,10 +74,10 @@ h1 {
 
 @media (max-width: 768px) {
     #hangman-img {
-        max-width: 160px;
+        max-width: 120px;
         position: absolute;
-        top: -4px;
-        left: 420px;
+        left: 375px;
+        top: 5px;
         transform: translateX(-50%);
     }
     .ctn {
@@ -102,22 +101,9 @@ h1 {
     place-content: center;
     margin-bottom: 2rem;
 }
-/*
+
 .letter {
-    font-family: "Shadows Into Light", cursive;
-    background-color: #DBBC5F;
-    color: white;
-    border: none;
-    width: 45px;
-    margin: 1px;
-    cursor: pointer;
-    border-radius: 10px;
-    font-size: 35px;
-    transition: background-color 0.3s;
-}
-*/
-.letter {
-    font-family: "Shadows Into Light", cursive;
+    font-family: "Jersey 15";
     background-color: #DBBC5F;
     color: white;
     border: none;
@@ -157,7 +143,7 @@ h1 {
 }
 
 .reset, .menu {
-    font-family: "Shadows Into Light", cursive;
+    font-family: "Jersey 15";
     background-color: white;
     color: #DBBC5F;
     border: 2px solid #DBBC5F;
@@ -175,4 +161,175 @@ h1 {
 .reset:hover, .menu:hover {
     background-color: #DBBC5F;
     color: white;
+}
+.recordsinfo .button {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    border: 3px solid #352e5b;
+    border-radius: 15px;
+    padding: 8px;
+    background-color: #DBBC5F;
+    text-decoration: none;
+    color: #282345;
+    font-family: 'Inconsolata';
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "Inconsolata";
+    font-size: 18px;
+}
+
+.recordsinfo .button:hover {
+    background-color: #eae4d3;
+}
+
+.recordsinfo h1 {
+    text-align: center;
+    color: #352e5b;
+    margin-bottom: 45px;
+    margin-top: 15px;
+    font-size: 45px;
+}
+
+.recordsinfo {
+    font-family: 'Jersey 15';
+    background-color: #C7D2F2;
+}
+
+.recordsinfo .ctn {
+    position: relative;
+    margin: 9rem auto;
+    max-width: 750px;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.temabody
+{
+    background-color: #C7D2F2;
+    background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center 0px;
+	background-attachment: fixed;
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.tema
+{
+    padding: 20px;
+    margin: 20px;
+    top: 70px;
+    width: 25vw;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    float: right;
+    transition: all 500ms ease-in-out;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tema:hover
+{
+    margin: 20px;
+    width: 29vw;
+    height: 57vh;
+    background-size: cover;
+    box-shadow: 0px 0px 30px lightgray;
+    cursor: pointer;
+}
+
+.tema h1
+{
+    font-size: 4vw;
+    font-family: 'Inconsolata';
+    color: white;
+    text-shadow: 3px -1px 0px black;
+}
+
+#tenger
+{
+    background-image: url(img/tenger.jpg);
+}
+
+#ur
+{
+    
+    background-image: url(img/ur.jpg);
+}
+
+#orszag
+{
+    
+    background-image: url(img/orszag.jpg);
+}
+
+.indexbody ul {
+    list-style-type: none;
+    margin-bottom: 45px;
+    padding: 0;
+    text-align: center;
+}
+
+.indexbody .button {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    border: 3px solid #352e5b;
+    border-radius: 15px;
+    padding: 8px;
+    background-color: #DBBC5F;
+}
+
+.indexbody li {
+    margin-top: 10px;
+}
+
+.indexbody a {
+    text-decoration: none;
+    color: #282345;
+    font-family: "Inconsolata", monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.indexbody .button:hover {
+    background-color: #eae4d3;
+}
+
+.indexbody h1 {
+    text-align: center;
+    color: #352e5b;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    font-size: 45px;
+}
+
+.indexbody {
+    font-family: "Jersey 15", sans-serif;
+    background-color: #C7D2F2;
+}
+
+.indexbody .ctn {
+    position: relative;
+    margin: 9rem auto;
+    max-width: 750px;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
