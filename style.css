@@ -255,6 +255,17 @@ h1 {
     text-align: center;
     top: 55px;
 }
+#temakcim {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    color:#352e5b;
+}
 #tenger
 {
     background-image: url(img/tenger.jpg);
