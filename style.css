@@ -17,12 +17,12 @@ html {
 
 body {
     display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
-    height: 100vh; /* Set the container height to 100% of the viewport height */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 .quickGameBody{
-    background-color: #344E41;
+    background-color: #2c4237;
 }
 
 .ctn {
@@ -39,7 +39,7 @@ body {
 
 h1 {
     text-align: initial;
-    color: #DAD7CD;
+    color: #f2efe5;
     font-size: 4rem;
 }
 
@@ -60,7 +60,6 @@ h1 {
     position: absolute;
     top: -22px;
     left: 510px;
-    color: black;
 }
 
 @media (max-width: 1080px) {
@@ -103,13 +102,13 @@ h1 {
     grid-gap: 1rem;
     place-content: center;
     margin-bottom: 2rem;
-    background-color: #588157;
+    background-color: #ffffff;
     opacity: 60%;
 }
 
 .letter {
     font-family: "Jersey 15";
-    background-color: #DAD7CD;
+    background-color: #b6b09f;
     color: black;
     border: none;
     width: 38px;
@@ -120,7 +119,7 @@ h1 {
 }
 
 .letter:hover {
-    background-color: #C7D2F2;
+    background-color: #b9eec0;
 }
 
 .letter.btn-clicked {
@@ -150,9 +149,9 @@ h1 {
 
 .reset, .menu {
     font-family: "Jersey 15";
-    background-color: #A3B18A;
-    color: snow;
-    border: 2px solid black;
+    background-color: #909d82;
+    color: rgb(242, 242, 242);
+    border: 2px solid rgb(40, 38, 38);
     padding: 0.5rem 1rem;
     cursor: pointer;
     border-radius: 10px;
@@ -165,8 +164,8 @@ h1 {
 }
 
 .reset:hover, .menu:hover {
-    background-color: #DBBC5F;
-    color: white;
+    background-color: rgb(225, 235, 216);
+    color: #293b29;
 }
 .temabody {
     background-color: #588157;
@@ -255,10 +254,10 @@ h1 {
     display: block;
     margin: 0 auto;
     max-width: 400px;
-    border: 3px solid #352e5b;
+    border: 3px solid #383838;
     border-radius: 15px;
     padding: 8px;
-    background-color: #A3B18A;
+    background-color: #b2bda7;
 }
 
 .indexbody li {
@@ -267,16 +266,16 @@ h1 {
 
 .indexbody a {
     text-decoration: none;
-    color: #DAD7CD;
+    color: #383838;
     font-family: "Inconsolata", monospace;
     font-size: 20px;
     font-weight: bold;
 }
 
 .indexbody .button:hover {
-    background-color: #eae4d3;
+    background-color: #d3d1cb;
     cursor: pointer;
-    color: black;
+    color: #2c4237;
 }
 
 .indexbody h1 {
@@ -311,7 +310,7 @@ h1 {
     font-family: 'Jersey 15', sans-serif;
     font-size: 30px;
     margin-bottom: 20px;
-    color: #DAD7CD;
+    color: #344E41;
 }
 .modal-content p {
     font-family: 'Inconsolata', monospace;
@@ -332,10 +331,10 @@ h1 {
 }
 
 .modal-content {
-    background-color: #ded7be;
+    background-color: #e6e0ce;
     margin: 15% auto;
     padding: 20px;
-    border: 4px solid #DAD7CD;
+    border: 3px solid #1d2a24;
     width: 80%;
     max-width: 600px;
     text-align: center;
