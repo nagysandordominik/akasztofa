@@ -30,6 +30,7 @@ body {
     margin: 6rem auto;
     min-width: 700px;
     width: 60%;
+    height: fit-content;
     background-color: #588157;
     padding: 3rem;
     border-radius: 10px;
@@ -104,6 +105,9 @@ h1 {
     margin-bottom: 2rem;
     background-color: #ffffff;
 
+}
+.hangman-ctn{
+    margin: 40px;
 }
 
 .letter {
