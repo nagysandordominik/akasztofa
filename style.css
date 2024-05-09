@@ -168,55 +168,6 @@ h1 {
     background-color: #DBBC5F;
     color: white;
 }
-<<<<<<< HEAD
-
-=======
-.recordsinfo .button {
-    display: block;
-    margin: 0 auto;
-    max-width: 400px;
-    border: 3px solid #352e5b;
-    border-radius: 15px;
-    padding: 8px;
-    background-color: #DBBC5F;
-    text-decoration: none;
-    color: #282345;
-    font-family: 'Jersey 15';
-    font-size: larger;
-    font-weight: bold;
-    cursor: pointer;
-    font-family: "Jersey 15";
-    font-size: 18px;
-}
-
-.recordsinfo .button:hover {
-    background-color: #eae4d3;
-}
-
-.recordsinfo h1 {
-    text-align: center;
-    color: #352e5b;
-    margin-bottom: 45px;
-    margin-top: 15px;
-    font-size: 45px;
-}
-
-.recordsinfo {
-    font-family: 'Jersey 15';
-    background-color: #C7D2F2;
-}
-
-.recordsinfo .ctn {
-    position: relative;
-    margin: 9rem auto;
-    max-width: 750px;
-    background-color: #588157;
-    padding: 3rem;
-    border-radius: 10px;
-    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
->>>>>>> bcee5b0d5897ac68b465f575d46a82d6325af4c9
 .temabody {
     background-color: #588157;
     max-width: 100vw;
